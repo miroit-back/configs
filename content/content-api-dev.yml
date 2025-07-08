@@ -1,4 +1,4 @@
-# 결재 개발 yml
+# 콘텐츠 개발 yml
 spring:
   config:
     import: optional:application-base.yml

@@ -1,4 +1,4 @@
-# 결재 로컬 yml
+# 이니셜 로컬 yml
 spring:
   config:
     import: optional:application-base.yml
@@ -40,7 +40,7 @@ springdoc:
     operations-sorter: method # 메소드 순서로 정렬
     doc-expansion: none # 카테고리가 접힌상태로 로딩
   packages-to-scan: com.miroit
-  title: Initial API 문서 (dev)
+  title: Initial API 문서 (local)
   version: 1.0
 
 # jwt setting
