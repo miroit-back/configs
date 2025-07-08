@@ -1,6 +1,7 @@
 # 방문 로컬 yml
 spring:
-  import: optional:application-base.yml
+  config:
+    import: optional:application-base.yml
 
   # db setting
   datasource:

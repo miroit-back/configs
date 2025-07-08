@@ -1,6 +1,7 @@
 # 방문 개발 yml
 spring:
-  import: optional:application-base.yml
+  config:
+    import: optional:application-base.yml
 
   # db setting
   datasource:
