@@ -1,11 +1,4 @@
-server:
-  port: 9000
-  servlet:
-    context-path: /
-
 spring:
-  main:
-    web-application-type: reactive
   cloud:
     kubernetes:
       discovery:
@@ -39,12 +32,12 @@ spring:
               filters:
                 - StripPrefix=1
 
-            - id: content
-              uri: lb://content-api
-              predicates:
-                - Path=/content/**
-              filters:
-                - StripPrefix=1
+#            - id: content
+#              uri: lb://content-api
+#              predicates:
+#                - Path=/content/**
+#              filters:
+#                - StripPrefix=1
 
 
 # health
