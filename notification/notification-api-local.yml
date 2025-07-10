@@ -1,9 +1,9 @@
 # 알람 로컬 yml
 spring:
   config:
-    import:
-      - optional:application-base.yml
-      - optional:application-base-local.yml
+    import: optional:application-base.yml
+#      - optional:application-base.yml
+#      - optional:application-base-local.yml
 
   # db setting
   datasource:
@@ -58,3 +58,16 @@ file:
   upload:
     root-path: tmp/files/uploads
     file-max-size: 10485760 # 10MB (10 * 1024 * 1024)
+
+# feign URL list
+feign:
+  initial-api:
+    url: localhost:9090
+  visit-api:
+    url: localhost:9091
+  content-api:
+    url: localhost:9092
+  notification-api:
+    url: localhost:9093
+  approval-api:
+    url: localhost:9094
