@@ -60,18 +60,18 @@ file:
 # internal-api setting
 internal-api:
   visit:
-    url:
+    url: ""
   content:
-    url:
+    url: ""
   notification:
-    url:
+    url: ""
   approval:
-    url:
+    url: ""
   access:
-    url:
+    url: ""
   auth:
-    url:
+    url: ""
   member:
-    url:
+    url: ""
   parking:
-    url:
+    url: ""
