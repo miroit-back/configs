@@ -5,7 +5,7 @@ spring:
 
   # db setting
   datasource:
-    url: jdbc:mysql://123.143.44.130:3306/initial
+    url: ENC(bBfigA6O2jJ9kyyKnpnnOBGuLoOjGBUuoNEQo//NHRipeiY10fQp5NcLLt/IwAgrfdCtf+kpexA=)
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: ENC(rvh8IPUPR3+j+ABMgJ99cA==)
     password: ENC(gU3m+DjVitIhapRgdNKjIpypCGfyp1Lx)
