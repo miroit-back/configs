@@ -5,10 +5,10 @@ spring:
 
   # db setting
   datasource:
-    url: jdbc:mysql://192.168.219.171:3306/initial
+    url: ENC(bBfigA6O2jJ9kyyKnpnnOBGuLoOjGBUuoNEQo//NHRipeiY10fQp5NcLLt/IwAgrfdCtf+kpexA=)
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: root
-    password: miroit#0621^^
+    username: ENC(rvh8IPUPR3+j+ABMgJ99cA==)
+    password: ENC(gU3m+DjVitIhapRgdNKjIpypCGfyp1Lx)
 
   # jpa setting
   jpa:
