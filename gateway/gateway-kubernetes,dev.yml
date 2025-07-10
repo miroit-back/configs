@@ -32,12 +32,12 @@ spring:
               filters:
                 - StripPrefix=1
 
-#            - id: content
-#              uri: lb://content-api
-#              predicates:
-#                - Path=/content/**
-#              filters:
-#                - StripPrefix=1
+            - id: content
+              uri: lb://content-api
+              predicates:
+                - Path=/content/**
+              filters:
+                - StripPrefix=1
 
 
 # health
