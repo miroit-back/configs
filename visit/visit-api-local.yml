@@ -61,4 +61,4 @@ file:
 # feign URL list
 feign:
   initial-api:
-    url: http://localhost:9090
+    url: localhost:9090
