@@ -2,8 +2,8 @@
 spring:
   config:
     import: #optional:application-base.yml
-      optional:application-base-dev.yml,
-      optional:application-base.yml
+      - application-base.yml
+      - application-base-dev.yml
 #      - optional:classpath:configs/application-base-dev.yml
 #      - optional:classpath:configs/application-base.yml
 
