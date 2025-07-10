@@ -60,18 +60,18 @@ file:
 # internal-api setting
 internal-api:
   visit:
-    url: visit-api:9091
+    url: ""
   content:
-    url: content-api:9092
+    url: ""
   notification:
-    url: notification-api:9093
+    url: ""
   approval:
-    url: approval-api:9094
+    url: ""
   access:
-    url: access-api:9999 # port 미정
+    url: ""
   auth:
-    url: auth-api:9999 # port 미정
+    url: ""
   member:
-    url: member-api:9999 # port 미정
+    url: ""
   parking:
-    url: parking-api:9999 # port 미정
+    url: ""

@@ -60,18 +60,18 @@ file:
 # internal-api setting
 internal-api:
   visit:
-    url: localhost:9091
+    url: http://visit-api.miroit.kro.kr
   content:
-    url: localhost:9092
+    url: http://content-api.miroit.kro.kr
   notification:
-    url: localhost:9093
+    url: http://notification-api.miroit.kro.kr
   approval:
-    url: localhost:9094
+    url: http://approval-api.miroit.kro.kr
   access:
-    url: localhost:9999 # port 미정
+    url: http://access-api.miroit.kro.kr
   auth:
-    url: localhost:9999 # port 미정
+    url: http://auth-api.miroit.kro.kr
   member:
-    url: localhost:9999 # port 미정
+    url: http://member-api.miroit.kro.kr
   parking:
-    url: localhost:9999 # port 미정
+    url: http://parking-api.miroit.kro.kr
