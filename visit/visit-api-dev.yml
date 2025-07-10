@@ -62,3 +62,5 @@ file:
 feign:
   initial-api:
     url: initial-api:9090
+  content-api:
+    url: content-api:9092
