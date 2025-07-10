@@ -1,11 +1,11 @@
 # 알람 개발 yml
 spring:
   config:
-    import: #optional:application-base.yml
+    import: optional:application-base.yml
 #      - optional:application-base.yml
 #      - optional:application-base-dev.yml
-      - optional:classpath:configs/application-base.yml
-      - optional:classpath:configs/application-base-dev.yml
+#      - optional:classpath:configs/application-base.yml
+#      - optional:classpath:configs/application-base-dev.yml
 
   # db setting
   datasource:
