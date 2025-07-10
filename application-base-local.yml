@@ -1,0 +1,14 @@
+# 공통 local yml
+
+# feign URL list
+feign:
+  initial-api:
+    url: localhost:9090
+  visit-api:
+    url: localhost:9091
+  content-api:
+    url: localhost:9092
+  notification-api:
+    url: localhost:9093
+  approval-api:
+    url: localhost:9094

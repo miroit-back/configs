@@ -1,4 +1,4 @@
-# 방문 개발 yml
+# 공통 yml
 spring:
   servlet:
     multipart:
