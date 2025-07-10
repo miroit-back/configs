@@ -1,0 +1,67 @@
+server:
+  port: 9001
+  servlet:
+    context-path: /
+
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    kubernetes:
+      discovery:
+        enabled: true
+        all-namespaces: false
+        namespaces: ["miroit-access"]
+        service-labels:
+          gateway-access: "true"
+    gateway:
+      server:
+        webflux:
+          routes:
+            - id: visit
+              uri: lb://visit-api
+              predicates:
+                - Path=/visit/**
+              filters:
+                - StripPrefix=1
+
+            - id: notification
+              uri: lb://notification-api
+              predicates:
+                - Path=/notification/**
+              filters:
+                - StripPrefix=1
+
+            - id: approval
+              uri: lb://approval-api
+              predicates:
+                - Path=/approval/**
+              filters:
+                - StripPrefix=1
+
+            - id: content
+              uri: lb://content-api
+              predicates:
+                - Path=/content/**
+              filters:
+                - StripPrefix=1
+
+
+# health
+management:
+  endpoint:
+    health:
+      show-details: always
+
+  endpoints:
+    web:
+      exposure:
+        include: health, prometheus
+  info:
+    env:
+      enabled: true
+logging:
+  level:
+    com.miroit.gateway.global.filter.RequestLoggingFilter: INFO
+    org.springframework.cloud.gateway: INFO
+    org.springframework.cloud.kubernetes: INFO
