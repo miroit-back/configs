@@ -1,9 +1,9 @@
 # 알람 개발 yml
 spring:
   config:
-    import: optional:application-base.yml
-#      - optional:application-base.yml
-#      - optional:application-base-dev.yml
+    import: #optional:application-base.yml
+      - optional:application-base.yml
+      - optional:application-base-dev.yml
 
   # db setting
   datasource:
@@ -60,14 +60,14 @@ file:
     file-max-size: 10485760 # 10MB (10 * 1024 * 1024)
 
 # feign URL list
-feign:
-  initial-api:
-    url: initial-api:9090
-  visit-api:
-    url: visit-api:9091
-  content-api:
-    url: content-api:9092
-  notification-api:
-    url: notification-api:9093
-  approval-api:
-    url: approval-api:9094
+#feign:
+#  initial-api:
+#    url: initial-api:9090
+#  visit-api:
+#    url: visit-api:9091
+#  content-api:
+#    url: content-api:9092
+#  notification-api:
+#    url: notification-api:9093
+#  approval-api:
+#    url: approval-api:9094
