@@ -1,7 +1,7 @@
 
 # jwt setting
 jwt:
-  issuer: approval-api
+  issuer: hr
   access-token-secret-key: hr-api-access-secret_hr-api-access-secret
   access-token-expiration: 3600000 # 1개월
   refresh-token-secret-key: hr-api-refresh-secret_hr-api-refresh-secret
