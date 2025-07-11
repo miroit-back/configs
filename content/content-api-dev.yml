@@ -5,10 +5,10 @@ spring:
 
   # db setting
   datasource:
-    url: ENC(bBfigA6O2jJ9kyyKnpnnOBGuLoOjGBUuoNEQo//NHRipeiY10fQp5NcLLt/IwAgrfdCtf+kpexA=)
+    url: ENC(9vDSWtgW5LixCo17f4/EpO0GLX3cO5DcBVxx0c2MGHZViZ1GCkKDYSxwX9a361lAEVtBuGmW3HU=)
     driver-class-name: com.mysql.cj.jdbc.Driver
-    username: ENC(rvh8IPUPR3+j+ABMgJ99cA==)
-    password: ENC(gU3m+DjVitIhapRgdNKjIpypCGfyp1Lx)
+    username: ENC(RK7w+W03ss/4JjxaJ5Wxuw==)
+    password: ENC(N+Q3AoarzhldSB3OC1pCNVTvxUO0yE/I)
 
   # jpa setting
   jpa:
