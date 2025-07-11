@@ -1,11 +1,11 @@
-# db setting
-datasource:
-  url: jdbc:mysql://192.168.219.171:3306
-  driver-class-name: com.mysql.cj.jdbc.Driver
-  username: root
-  password: miroit#0621^^
 
 spring:
+  # db setting
+  datasource:
+    url: jdbc:mysql://192.168.219.171:3306
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: miroit#0621^^
   cloud:
     kubernetes:
       discovery:
