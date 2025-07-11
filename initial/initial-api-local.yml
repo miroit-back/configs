@@ -56,3 +56,22 @@ file:
   upload:
     root-path: tmp/files/uploads
     file-max-size: 10485760 # 10MB (10 * 1024 * 1024)
+
+# internal-api setting
+internal-api:
+  visit:
+    url: http://visit-api.miroit.kro.kr
+  content:
+    url: http://content-api.miroit.kro.kr
+  notification:
+    url: http://notification-api.miroit.kro.kr
+  approval:
+    url: http://approval-api.miroit.kro.kr
+  access:
+    url: http://access-api.miroit.kro.kr
+  auth:
+    url: http://auth-api.miroit.kro.kr
+  member:
+    url: http://member-api.miroit.kro.kr
+  parking:
+    url: http://parking-api.miroit.kro.kr
