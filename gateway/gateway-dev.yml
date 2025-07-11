@@ -1,4 +1,20 @@
 
+# jwt setting
+jwt:
+  issuer: approval-api
+  access-token-secret-key: approval-api-access-secret_approval-api-access-secret
+  access-token-expiration: 3600000 # 1개월
+  refresh-token-secret-key: approval-api-refresh-secret_approval-api-refresh-secret
+  refresh-token-expiration: 2592000000 # 1개월
+
+jasypt:
+  encryptor:
+    password: miroit
+
+springdoc:
+  title: gateway
+  version: 1.0.0
+
 spring:
   # db setting
   datasource:
