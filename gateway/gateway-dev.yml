@@ -60,6 +60,12 @@ spring:
               filters:
                 - StripPrefix=1
 
+            - id: hr
+              uri: lb://hr-api
+              predicates:
+                - Path=/hr/**
+              filters:
+                - StripPrefix=1
 
 # health
 management:
