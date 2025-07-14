@@ -43,14 +43,6 @@ springdoc:
   title: Notification API 문서 (dev)
   version: 1.0
 
-# jwt setting
-jwt:
-  issuer: notification-api
-  access-token-secret-key: notification-api-access-secret_notification-api-access-secret
-  access-token-expiration: 3600000 # 1개월
-  refresh-token-secret-key: notification-api-refresh-secret_notification-api-refresh-secret
-  refresh-token-expiration: 2592000000 # 1개월
-
 # file
 file:
   upload:
