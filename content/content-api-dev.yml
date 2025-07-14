@@ -13,7 +13,7 @@ spring:
   # jpa setting
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     properties:
@@ -42,14 +42,6 @@ springdoc:
   packages-to-scan: com.miroit
   title: Content API 문서 (dev)
   version: 1.0
-
-# jwt setting
-jwt:
-  issuer: content-api
-  access-token-secret-key: content-api-access-secret_content-api-access-secret
-  access-token-expiration: 3600000 # 1개월
-  refresh-token-secret-key: content-api-refresh-secret_content-api-refresh-secret
-  refresh-token-expiration: 2592000000 # 1개월
 
 # file
 file:
