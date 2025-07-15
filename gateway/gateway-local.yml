@@ -10,9 +10,26 @@ jasypt:
   encryptor:
     password: miroit
 
+# swagger setting
 springdoc:
-  title: gateway
-  version: 1.0.0
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    disable-swagger-default-url: true
+    path: /swagger-ui.html
+    tags-sorter: alpha # 알파벳 순서로 정렬
+    operations-sorter: method # 메소드 순서로 정렬
+    doc-expansion: none # 카테고리가 접힌상태로 로딩
+    urls: # 타 서비스도 추가할 예정
+      - url: /hr/v3/api-docs # hr
+        name: HR
+      - url: /content/v3/api-docs # content
+        name: Content
+
+  packages-to-scan: com.miroit
+  title: MIROIT-ACCESS API 문서 (dev)
+  version: 1.0
+
 
 spring:
   # db setting
