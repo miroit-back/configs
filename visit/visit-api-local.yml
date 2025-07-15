@@ -7,4 +7,4 @@ spring:
   config:
     import:
       - optional:application-base.yml
-      - optional:application-base-lo.yml
+      - optional:file:./application-base-local.yml
