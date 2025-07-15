@@ -42,6 +42,7 @@ springdoc:
   packages-to-scan: com.miroit
   title: HR API 문서 (local)
   version: 1.0
+  server: /hr
 
 # jwt setting
 jwt:
