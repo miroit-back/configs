@@ -16,12 +16,16 @@ spring:
       sort:
         sort-parameter: sort
 
-  # health
-  management:
-    endpoints:
-      web:
-        exposure:
-          include: health,prometheus
-    endpoint:
-      health:
-        show-details: always
+# health
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: always
