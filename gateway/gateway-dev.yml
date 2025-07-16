@@ -84,19 +84,6 @@ spring:
               filters:
                 - StripPrefix=1
 
-# health
-management:
-  endpoint:
-    health:
-      show-details: always
-
-  endpoints:
-    web:
-      exposure:
-        include: health,prometheus
-  info:
-    env:
-      enabled: true
 logging:
   level:
     com.miroit.gateway.global.filter.RequestLoggingFilter: INFO

@@ -1,8 +1,5 @@
+# 방문 개발 yml
 miroit:
   service:
     schema: visit
     title: Visit
-
-spring:
-  config:
-    import: optional:application-base-dev.yml
