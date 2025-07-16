@@ -23,7 +23,7 @@ spring:
 
   # db setting
   datasource:
-    url: jdbc:mysql://192.168.219.171:3306/${miroit.service.code}
+    url: jdbc:mysql://192.168.219.171:3306/${miroit.service.schema}
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: miroit#0621^^
@@ -58,7 +58,7 @@ springdoc:
     operations-sorter: method # 메소드 순서로 정렬
     doc-expansion: none # 카테고리가 접힌상태로 로딩
   packages-to-scan: com.miroit
-  title: ${miroit.service.code} API 문서 (${spring.profiles.active})
+  title: ${miroit.service.title} API 문서 (${spring.profiles.active})
   version: 1.0
 
 # file
