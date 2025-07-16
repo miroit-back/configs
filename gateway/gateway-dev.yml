@@ -91,13 +91,6 @@ spring:
               filters:
                 - StripPrefix=1
 
-            - id: approval
-              uri: lb://approval-api
-              predicates:
-                - Path=/approval/**
-              filters:
-                - StripPrefix=1
-
 logging:
   level:
     com.miroit.gateway.global.filter.RequestLoggingFilter: INFO
