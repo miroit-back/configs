@@ -11,3 +11,6 @@ jwt:
   access-token-expiration: 3600000 # 1개월
   refresh-token-secret-key: hr-api-refresh-secret_hr-api-refresh-secret
   refresh-token-expiration: 2592000000 # 1개월
+
+springdoc:
+  server: /hr
