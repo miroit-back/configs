@@ -1,3 +1,8 @@
+miroit:
+  service:
+    schema: visit
+    title: Visit
+
 spring:
   config:
     import: optional:application-base-dev.yml
