@@ -1,3 +1,10 @@
+miroit:
+  service:
+    schema:
+    title: Gateway
+
+
+
 # jwt setting
 jwt:
   issuer: hr-api
