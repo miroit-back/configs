@@ -19,11 +19,17 @@ springdoc:
     tags-sorter: alpha # 알파벳 순서로 정렬
     operations-sorter: method # 메소드 순서로 정렬
     doc-expansion: none # 카테고리가 접힌상태로 로딩
-    urls: # 타 서비스도 추가할 예정
+    urls:
       - url: /hr/v3/api-docs # hr
         name: HR
       - url: /content/v3/api-docs # content
         name: Content
+      - url: /notification/v3/api-docs # notification
+        name: Notification
+      - url: /visit/v3/api-docs # visit
+        name: Visit
+      - url: /approval/v3/api-docs # approval
+        name: Approval
 
   packages-to-scan: com.miroit
   title: MIROIT-ACCESS API 문서 (dev)
@@ -81,6 +87,13 @@ spring:
               uri: lb://hr-api
               predicates:
                 - Path=/hr/**
+              filters:
+                - StripPrefix=1
+
+            - id: approval
+              uri: lb://approval-api
+              predicates:
+                - Path=/approval/**
               filters:
                 - StripPrefix=1
 
