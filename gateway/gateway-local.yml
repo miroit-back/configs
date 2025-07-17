@@ -85,7 +85,7 @@ spring:
               filters:
                 - StripPrefix=1
             - id: hr
-              uri: lb://hr-api
+              uri: http://192.168.219.239:9095
               predicates:
                 - Path=/hr/**
               filters:
