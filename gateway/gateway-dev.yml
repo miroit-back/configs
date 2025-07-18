@@ -20,6 +20,8 @@ springdoc:
   api-docs:
     path: /v3/api-docs
   swagger-ui:
+    persist-authorization: true # 인증 정보 유지 설정
+    display-request-duration: true # 요청 소요 시간 표시
     disable-swagger-default-url: true
     path: /swagger-ui.html
     tags-sorter: alpha # 알파벳 순서로 정렬
