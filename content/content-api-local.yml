@@ -3,3 +3,9 @@ miroit:
   service:
     schema: content
     title: Content
+
+# kakao API
+kakao:
+  maps:
+    api:
+      key: ENC(at30EThDlcniUz6iuyIc2JCi9pzvhm3/EspJ6Xni6KiOV5qhQLMEV9Qo2ei4Aag0)
