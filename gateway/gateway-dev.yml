@@ -98,7 +98,14 @@ spring:
                 - Path=/hr/**
               filters:
                 - StripPrefix=1
-                - RemoveRequestHeader=Authorization # Authorization header 제거
+
+            - id: login-route
+              uri: lb://hr-api
+              predicates:
+                - Path=/hr/user/login
+              filters:
+                - StripPrefix=1
+                - RemoveRequestHeader=Authorization
 
 logging:
   level:
