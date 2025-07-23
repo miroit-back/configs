@@ -4,9 +4,23 @@ miroit:
     schema: content
     title: Content
 
-# kakao API
-kakao:
-  maps:
-    api:
-      key: ENC(at30EThDlcniUz6iuyIc2JCi9pzvhm3/EspJ6Xni6KiOV5qhQLMEV9Qo2ei4Aag0)
-      url: https://dapi.kakao.com/v2/local/search/address.json
+# geocoding 관련 설정
+geocoding:
+  # provider 변경 시 geocoding 구현체가 변경되어 주입됩니다.
+  # 가능한 값: kakao, google, naver
+  provider: kakao
+  # 지오코딩 서비스 제공자별 상세 설정
+  providers:
+    # Google Geocoding API 설정
+    google:
+      api-key: # Google Cloud Platform에서 발급받은 API Key
+      url: https://maps.googleapis.com/maps/api/geocode/json # Google Geocoding API 엔드포인트 URL
+    # Naver Geocoding API 설정
+    naver:
+      client-id: # 네이버 개발자 센터에서 발급받은 Client ID
+      client-secret: # 네이버 개발자 센터에서 발급받은 Client Secret
+      url: https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode # 네이버 Geocoding API 엔드포인트 URL
+    # Kakao Local API (주소 검색) 설정
+    kakao:
+      api-key: ENC(at30EThDlcniUz6iuyIc2JCi9pzvhm3/EspJ6Xni6KiOV5qhQLMEV9Qo2ei4Aag0) # 카카오 개발자 센터에서 발급받은 REST API Key (암호화되어 있음)
+      url: https://dapi.kakao.com/v2/local/search/address.json # 카카오 주소 검색 API 엔드포인트 URL
