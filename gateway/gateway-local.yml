@@ -92,6 +92,7 @@ spring:
                 - Path=/hr/**
               filters:
                 - StripPrefix=1
+                - RemoveRequestHeader=Authorization # Authorization header 제거
 
 # health
 management:
