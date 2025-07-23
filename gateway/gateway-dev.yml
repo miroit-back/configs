@@ -31,6 +31,8 @@ springdoc:
     urls:
       - url: /hr/v3/api-docs # hr
         name: HR
+        filters:
+          - RemoveRequestHeader=Authorization # Authorization header 제거
       - url: /content/v3/api-docs # content
         name: Content
       - url: /notification/v3/api-docs # notification
