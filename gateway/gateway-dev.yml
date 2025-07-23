@@ -92,13 +92,6 @@ spring:
               filters:
                 - StripPrefix=1
 
-            - id: hr
-              uri: lb://hr-api
-              predicates:
-                - Path=/hr/**
-              filters:
-                - StripPrefix=1
-
             - id: login-route
               uri: lb://hr-api
               predicates:
@@ -106,6 +99,14 @@ spring:
               filters:
                 - StripPrefix=1
                 - RemoveRequestHeader=Authorization
+
+            - id: hr
+              uri: lb://hr-api
+              predicates:
+                - Path=/hr/**
+              filters:
+                - StripPrefix=1
+
 
 logging:
   level:

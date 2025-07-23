@@ -86,12 +86,6 @@ spring:
                 - Path=/content/**
               filters:
                 - StripPrefix=1
-            - id: hr
-              uri: http://192.168.219.239:9095
-              predicates:
-                - Path=/hr/**
-              filters:
-                - StripPrefix=1
 
             - id: login-route
               uri: lb://hr-api
@@ -100,6 +94,14 @@ spring:
               filters:
                 - StripPrefix=1
                 - RemoveRequestHeader=Authorization
+
+            - id: hr
+              uri: http://192.168.219.239:9095
+              predicates:
+                - Path=/hr/**
+              filters:
+                - StripPrefix=1
+
 
 # health
 management:
