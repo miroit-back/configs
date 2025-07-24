@@ -95,8 +95,7 @@ spring:
             - id: authentication-route
               uri: lb://hr-api
               predicates:
-                - Path=/hr/user/login
-                - Path=/hr/token/refresh
+                - Path=/hr/user/login,/hr/token/refresh
               filters:
                 - StripPrefix=1
                 - RemoveRequestHeader=Authorization

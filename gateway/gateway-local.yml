@@ -90,8 +90,7 @@ spring:
             - id: authentication-route
               uri: http://192.168.219.239:9095
               predicates:
-                - Path=/hr/user/login
-                - Path=/hr/token/refresh
+                - Path=/hr/user/login,/hr/token/refresh
               filters:
                 - StripPrefix=1
                 - RemoveRequestHeader=Authorization
