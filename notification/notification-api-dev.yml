@@ -3,3 +3,8 @@ miroit:
   service:
     schema: notification
     title: Notification
+
+# mail
+external-api:
+  resend:
+    api-key: re_ftqkMfT3_Pa3Jf6ibhZ4eCkNA21phRcZw
